@@ -25,6 +25,7 @@ header{
     width: 100vw;
     height: 100vh;
     background-image: url(img/jovem-na-barbearia-aparando-cabelo.jpg);
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -110,6 +111,7 @@ nav ul li{
     width: 100vw;
     height: 60vh;
     display: flex;
+    border: 2px solid red;
 }
 
 .textBemvindo{
