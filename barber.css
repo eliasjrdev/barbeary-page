@@ -43,8 +43,6 @@ header{
 }
 
 nav{
-    position: fixed;
-    top: 7%;
     width: 90vw;
     height: 10%;
     display: flex;
@@ -111,7 +109,6 @@ nav ul li{
     width: 100vw;
     height: 60vh;
     display: flex;
-    border: 2px solid red;
 }
 
 .textBemvindo{
@@ -203,5 +200,57 @@ nav ul li{
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.serviços{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    background-color: #4A4F52;
+    cursor: pointer;
+}
+
+.serviços .menuServiços{
+    width: 100%;
+    height: 100%;
+}
+
+.serviços .menuServiços ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.serviços .menuServiços ul div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.serviços .menuServiços ul div span{
+    padding: 10px;
+}
+
+.serviços .menuServiços ul div button{
+    padding: 7px;
+    font-size: 1rem;
+    font-family: var(--fonte-secundaria);
+    background-color:#ed844a;
+    border: none;
+    color: white;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.serviços .menuServiços ul div img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
