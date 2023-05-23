@@ -261,26 +261,30 @@ nav ul li{
 .containerProfissionais{
     width: 100vw;
     height: 100vh;
+
 }
 
 .containerCards{
     display: flex;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .containerProfissionais .TituloProfissionais{
     width: 100vw;
-    height: 20%;
+    height: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: var(--fonte-primaria);
+    font-size:1.5rem ;
 }
 
 .containerProfissionais .cardsProfiss{
     width: 35vw;
     height: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .containerProfissionais .cardsProfiss img{
@@ -288,4 +292,18 @@ nav ul li{
     height: 100%;
     border: 5px solid #615d5d;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.containerProfissionais .cardsProfiss h2{
+    font-family: var(--fonte-primaria);
+    padding: 15px;
+    color: #ed844a;
+}
+
+.containerProfissionais .cardsProfiss h3{
+    text-align:center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+    line-height: 27px;
+    padding: 15px;
 }
