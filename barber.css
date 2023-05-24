@@ -5,6 +5,7 @@
 *{
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
 :root {
@@ -22,7 +23,7 @@ body{
 
 header{
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-image: url(img/jovem-na-barbearia-aparando-cabelo.jpg);
     background-attachment: fixed;
@@ -30,7 +31,7 @@ header{
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -39,6 +40,7 @@ header{
     background-color: rgba(0, 0, 0, 0.582);
     width: 100%;
     height: 100%;
+    
     z-index: 0;
 }
 
@@ -85,12 +87,14 @@ nav ul li{
 
 .titulo{
     width: 100vw;
-    height: 30%;
+    height: 60%;
+    padding-bottom: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     z-index: 1;
+    
 }
 
 .titulo h1{
@@ -106,9 +110,10 @@ nav ul li{
 /* SESSÓES */
 
 .menuhorarios{
-    width: 100vw;
+    width: 100%;
     height: 60vh;
     display: flex;
+  
 }
 
 .textBemvindo{
@@ -204,16 +209,18 @@ nav ul li{
 }
 
 .serviços{
-    width: 100vw;
-    height: 50vh;
+    width: 100%;
+    height: 60vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #333536;
-    padding: 25px;
+    padding-top: 10px;
 }
 
 .serviços .menuServiços{
     width: 100%;
-    height: 100%;
+    height: 90%;
 }
 
 .serviços .menuServiços ul {
@@ -225,7 +232,14 @@ nav ul li{
     list-style: none;
 }
 
+.serviços .menuServiços li{
+    width: 100%;
+    height: 100%;
+}
+
 .serviços .menuServiços ul div{
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -236,6 +250,7 @@ nav ul li{
 
 .serviços .menuServiços ul div span{
     padding: 10px;
+
 }
 
 .serviços .menuServiços ul div button{
@@ -251,8 +266,8 @@ nav ul li{
 }
 
 .serviços .menuServiços ul div img{
-    width: 200px;
-    height: 200px;
+    width: 72%;
+    height: 70%;
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border: 6px solid #615d5d;
@@ -261,12 +276,15 @@ nav ul li{
 .containerProfissionais{
     width: 100vw;
     height: 100vh;
-
+    border: 2px solid rgb(0, 255, 136);
 }
 
 .containerCards{
     display: flex;
+    width: 100%;
+    height: 85%;
     text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 2px solid rgb(47, 0, 255);
 }
 
 .containerProfissionais .TituloProfissionais{
@@ -285,6 +303,7 @@ nav ul li{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 2px solid rgb(47, 0, 255);
 }
 
 .containerProfissionais .cardsProfiss img{
@@ -298,6 +317,7 @@ nav ul li{
     font-family: var(--fonte-primaria);
     padding: 15px;
     color: #ed844a;
+    border: 2px solid rgb(47, 0, 255);
 }
 
 .containerProfissionais .cardsProfiss h3{
@@ -306,4 +326,39 @@ nav ul li{
     font-size: 1rem;
     line-height: 27px;
     padding: 15px;
+    border: 2px solid rgb(47, 0, 255);
+}
+
+.galeria{
+    width: 100%;
+    height: 100vh;
+    background-color: #333536;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+}
+
+.galeria h2{
+    border: 2px solid red;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: var(--fonte-primaria);
+}
+
+.galeria ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerGaleria ul li div img{
+    width: 40%;
+    height: 40%;
+    border: 2px solid red;
 }
