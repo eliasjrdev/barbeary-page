@@ -276,7 +276,6 @@ nav ul li{
 .containerProfissionais{
     width: 100vw;
     height: 100vh;
-    border: 2px solid rgb(0, 255, 136);
 }
 
 .containerCards{
@@ -284,7 +283,6 @@ nav ul li{
     width: 100%;
     height: 85%;
     text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border: 2px solid rgb(47, 0, 255);
 }
 
 .containerProfissionais .TituloProfissionais{
@@ -303,12 +301,11 @@ nav ul li{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid rgb(47, 0, 255);
 }
 
 .containerProfissionais .cardsProfiss img{
-    width:60%;
-    height: 100%;
+    width:50%;
+    height: 60%;
     border: 5px solid #615d5d;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -317,7 +314,6 @@ nav ul li{
     font-family: var(--fonte-primaria);
     padding: 15px;
     color: #ed844a;
-    border: 2px solid rgb(47, 0, 255);
 }
 
 .containerProfissionais .cardsProfiss h3{
@@ -326,39 +322,96 @@ nav ul li{
     font-size: 1rem;
     line-height: 27px;
     padding: 15px;
-    border: 2px solid rgb(47, 0, 255);
 }
 
 .galeria{
     width: 100%;
     height: 100vh;
     background-color: #333536;
-    border: 2px solid red;
+    font-size:1.5rem;
     display: flex;
     flex-direction: column;
+    border: 2px solid red;
 }
 
 .galeria h2{
-    border: 2px solid red;
-    height: 20%;
+    height: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
+    border: 2px solid red;
     font-family: var(--fonte-primaria);
 }
 
-.galeria ul{
+.containerGaleria{
     width: 100%;
     height: 100%;
-    display: flex;
+    border: 2px solid rgb(9, 17, 126);
+    border: 2px solid rgb(0, 89, 255);
+}
+
+.galeria ul{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
     list-style: none;
     justify-content: center;
     align-items: center;
+    border: 2px solid rgb(255, 8, 0);
+    display: flex;
+    
+}
+
+.galeria ul li{
+    border: 2px solid rgb(229, 255, 0);
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .containerGaleria ul li div img{
-    width: 40%;
-    height: 40%;
+    width: 100%;
+    height: 100%;
     border: 2px solid red;
+}
+
+.containerGaleria{
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+ul img{
+    width: 100%;
+    height: auto;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+  
+.next {
+    right: 0;
 }
