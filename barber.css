@@ -324,94 +324,51 @@ nav ul li{
     padding: 15px;
 }
 
-.galeria{
-    width: 100%;
-    height: 100vh;
-    background-color: #333536;
-    font-size:1.5rem;
-    display: flex;
-    flex-direction: column;
-    border: 2px solid red;
-}
-
-.galeria h2{
-    height: 15%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid red;
-    font-family: var(--fonte-primaria);
-}
-
 .containerGaleria{
-    width: 100%;
-    height: 100%;
-    border: 2px solid rgb(9, 17, 126);
-    border: 2px solid rgb(0, 89, 255);
-}
-
-.galeria ul{
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid rgb(255, 8, 0);
-    display: flex;
-    
-}
-
-.galeria ul li{
-    border: 2px solid rgb(229, 255, 0);
-    width: 100%;
-    height: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.containerGaleria ul li div img{
-    width: 100%;
-    height: 100%;
     border: 2px solid red;
+    display: flex;
+    justify-content: center;
 }
 
-.containerGaleria{
+.galeriaCarrossel {
     position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-ul{
+    width: 80vw;
+    height: 50vh;
+    border: 2px solid red;
     display: flex;
-    width: 100%;
-    overflow-x: hidden;
-}
-
-ul img{
+  }
+  
+  .slides {
+    display: flex;
+    width: 50%;
+    border: 2px solid red;
+   
+  }
+  
+  .slides img {
+    flex: 0 0 auto;
     width: 100%;
     height: auto;
-}
-
-.prev,
-.next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 30px;
-  font-weight: bold;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  cursor: pointer;
-}
-
-.prev {
-    left: 0;
-}
+  }
   
-.next {
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
     right: 0;
-}
+  }
+  
