@@ -210,12 +210,20 @@ nav ul li{
 
 .serviços{
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #333536;
     padding-top: 10px;
+}
+
+.serviços h2{
+    font-family: var(--fonte-primaria);
+    font-size:2.5rem ;
+    padding: 20px;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .serviços .menuServiços{
@@ -324,51 +332,21 @@ nav ul li{
     padding: 15px;
 }
 
-.containerGaleria{
-    border: 2px solid red;
+.mp{
+    background-color: #333536;
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size:1.5rem ;
+    font-family: var(--fonte-primaria);
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.galeriaCarrossel {
-    position: relative;
-    width: 80vw;
-    height: 50vh;
-    border: 2px solid red;
-    display: flex;
-  }
-  
-  .slides {
-    display: flex;
-    width: 50%;
-    border: 2px solid red;
-   
-  }
-  
-  .slides img {
-    flex: 0 0 auto;
-    width: 100%;
-    height: auto;
-  }
-  
-  .prev,
-  .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 30px;
-    font-weight: bold;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  .prev {
-    left: 0;
-  }
-  
-  .next {
-    right: 0;
-  }
-  
+
+.mpstyle{
+    width: 70%;
+    height: 80%;
+}

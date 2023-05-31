@@ -1,23 +1,20 @@
-var slideIndex = 0;
-var slideWidth = 0;
-var slidesContainer = document.querySelector('.slides');
-
-showSlide();
-
-function changeSlide(n) {
-  slideIndex += n;
-  slidesContainer.style.transform = `translateX(${slideIndex * -slideWidth}px)`;
-
-  if (slideIndex >= slidesContainer.children.length) {
-    slideIndex = 0;
-  } else if (slideIndex < 0) {
-    slideIndex = slidesContainer.children.length - 1;
-  }
+function initMap() {
+  var location = { lat: -2.51386, lng: -44.30448 }; // Coordenadas de latitude e longitude do local desejado
+  
+  var mapOptions = {
+    center: location, // Definindo o centro do mapa como o local desejado
+    zoom: 15
+  };
+  
+  var map = new google.maps.Map(document.getElementById('mapa'), mapOptions);
+  
+  var marker = new google.maps.Marker({
+    position: location, // Definindo a posição do marcador como o local desejado
+    map: map,
+    title: 'Barbearia'
+  });
 }
 
-function showSlide() {
-  var slides = document.querySelectorAll('.slides img');
-  slideWidth = slides[0].offsetWidth;
-}
+
 
 
